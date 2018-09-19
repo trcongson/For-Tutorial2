@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhập số nguyên dương: ", "0");
+    function giaithua(n) {
+        if (n<0){
+            return "không có";
+        }
+        if (n<3){
+            return n;
+        }
+        return n*giaithua(n-1);
+    }
+    giaithua(number);
+    document.write("Giai thừa: " + giaithua(number));
+</script>
+</body>
+</html>

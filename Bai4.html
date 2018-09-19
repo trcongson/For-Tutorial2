@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+<script>
+    function rectangle(h,w) {
+        let print = "";
+        for (let i =0; i<h;i++){
+            print += "\n";
+            for (let j =0; j<w;j++){
+                if ((i===0)||(i === (h-1))) {
+                    print += "*";
+                } else {
+                    if ((j===0)||(j === (w-1))){
+                        print += "*";
+                    }else {
+                        print += " ";
+                    }
+                }
+            }
+        }
+        console.log(print);
+    }
+    rectangle(6,10);
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+<script>
+    let Number = prompt("Nhập số fibonaci cần in: ", "0");
+    let count = 0;
+    let i = 0;
+    while (count<Number) {
+        if (fibonaci(i)) {
+            count += 1;
+            document.write(i + " ");
+        }
+        i += 1;
+    }
+    function fibonaci(a) {
+        if (a < 2) {
+            return false;
+        }
+        if (a === 2) {
+            return true;
+        }
+        for (let i = 2; i < a; i++) {
+            if ((a % i) === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>
